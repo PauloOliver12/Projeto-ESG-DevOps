@@ -280,7 +280,7 @@ git init
 git add .
 git commit -m "Projeto ESG com pipeline CI/CD"
 git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/esg-compliance-api.git
+git remote add origin https://github.com/PauloOliver12/Projeto-ESG-DevOps.git
 git push -u origin main
 ```
 
