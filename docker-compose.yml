@@ -1,0 +1,54 @@
+# Arquivo base, usado em todos os ambientes (local, staging e producao).
+# Localmente o docker-compose.override.yml e carregado automaticamente (build + porta do banco).
+# Nos servidores apenas este arquivo e usado, com a imagem publicada no GHCR.
+
+services:
+  oracle-db:
+    image: gvenzl/oracle-free:23-slim-faststart
+    environment:
+      ORACLE_PASSWORD: ${ORACLE_PASSWORD:-Oracle123}
+      APP_USER: ${DB_USERNAME:-projetof}
+      APP_USER_PASSWORD: ${DB_PASSWORD:-projetof123}
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+    networks:
+      - esg-net
+    healthcheck:
+      test: ["CMD", "healthcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 120s
+    restart: unless-stopped
+
+  app:
+    image: ${APP_IMAGE:-esg-compliance-api:local}
+    depends_on:
+      oracle-db:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: ${APP_ENV:-local}
+      APP_ENV: ${APP_ENV:-local}
+      APP_VERSION: ${APP_VERSION:-local}
+      DB_URL: jdbc:oracle:thin:@oracle-db:1521/FREEPDB1
+      DB_USERNAME: ${DB_USERNAME:-projetof}
+      DB_PASSWORD: ${DB_PASSWORD:-projetof123}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-Admin@123}
+      AUDITOR_PASSWORD: ${AUDITOR_PASSWORD:-Auditor@123}
+      ANALYST_PASSWORD: ${ANALYST_PASSWORD:-Analyst@123}
+      JAVA_OPTS: ${JAVA_OPTS:--XX:MaxRAMPercentage=75.0}
+      SPRING_DATASOURCE_HIKARI_INITIALIZATION_FAIL_TIMEOUT: 0
+      SPRING_FLYWAY_CONNECT_RETRIES: 60
+    ports:
+      - "${APP_PORT:-8080}:8080"
+    networks:
+      - esg-net
+    restart: unless-stopped
+
+networks:
+  esg-net:
+    driver: bridge
+
+volumes:
+  oracle-data:
+

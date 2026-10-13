@@ -1,0 +1,12 @@
+# Carregado automaticamente pelo "docker compose up" no ambiente local.
+services:
+  oracle-db:
+    ports:
+      - "${DB_PORT:-1521}:1521"
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_VERSION: ${APP_VERSION:-local}

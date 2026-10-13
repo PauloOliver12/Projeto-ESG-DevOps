@@ -1,0 +1,21 @@
+# Sem valores padrao: a aplicacao nao sobe em producao sem os segredos definidos.
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+app:
+  security:
+    admin-password: ${ADMIN_PASSWORD}
+    auditor-password: ${AUDITOR_PASSWORD}
+    analyst-password: ${ANALYST_PASSWORD}
+
+server:
+  error:
+    include-message: never
+    include-binding-errors: never
+
+logging:
+  level:
+    root: INFO
