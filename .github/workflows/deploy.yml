@@ -104,6 +104,11 @@ jobs:
             echo "ANALYST_PASSWORD=$ANALYST_PASSWORD"
             echo "JAVA_OPTS=$JAVA_OPTS"
           } > deploy.env
+          # O ambiente do processo tem precedencia sobre --env-file no Compose.
+          # Substitui os secrets vazios do job pelos mesmos valores gerados acima.
+          for v in ORACLE_PASSWORD DB_PASSWORD ADMIN_PASSWORD AUDITOR_PASSWORD ANALYST_PASSWORD; do
+            echo "$v=${!v}" >> "$GITHUB_ENV"
+          done
           # usado pelo smoke test autenticado
           echo "SMOKE_USER=analyst" >> "$GITHUB_ENV"
           echo "SMOKE_PASSWORD=$ANALYST_PASSWORD" >> "$GITHUB_ENV"
