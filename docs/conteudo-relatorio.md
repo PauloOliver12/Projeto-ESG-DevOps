@@ -387,18 +387,7 @@ Situação comprovada em 13/10/2026, com evidências preservadas na entrega.
 # Checklist e referências
 
 
-Item | Situação | Onde verificar
-Código e configuração | Conferidos | src/, pom.xml, Dockerfile e arquivos Compose
-Integrantes | Preenchidos | Capa e README.md
-Suíte automatizada | 21 testes aprovados | docs/evidencias/github/surefire-reports/
-API local / Swagger | 10 verificações HTTP OK | docs/evidencias/local/ e Figura 2
-Pipeline CI/CD | Cinco etapas aprovadas | Execução #2; Figura 3; resultado-ci.json
-Imagem no GHCR | Publicada; pacote privado | Tag sha-35720db e digest registrado
-Deploy staging e produção | Concluídos no runner | Figura 4 e artefatos por ambiente
-Enunciado oficial | Não disponível nesta revisão | Conferência final dos critérios da atividade
-
-Fechamento técnico
-A entrega demonstra o ciclo completo: compilação, testes, integração com Oracle, publicação da imagem e implantação validada em dois ambientes temporários. A aderência integral à rubrica acadêmica depende da conferência com o enunciado oficial, não disponibilizado nesta revisão.
+Conferido com os prints do enunciado da Fase 6 - Desafio DevOps fornecidos em 13/10/2026. Este PDF inclui os seis tópicos solicitados: integrantes, pipeline, Docker, prints da execução, staging/produção e desafios resolvidos.
 
 Referências
 
@@ -411,3 +400,16 @@ Fontes do projeto: repositório privado; GitHub Actions #2; XML Surefire, artefa
 [R3] GitHub Docs. GitHub-hosted runners. Consultar documentação. Acesso: 13 out. 2026.
 
 [R4] Docker. Set, use, and manage variables in a Compose file with interpolation. Consultar documentação. Acesso: 13 out. 2026.
+
+Checklist obrigatório de entrega
+
+Os deploys foram executados em runners temporários e suas evidências estão preservadas no ZIP. Os prints do enunciado não exigem Azure nem uma URL pública permanente.
+
+Item solicitado no enunciado | OK | Onde verificar
+Projeto compactado em .ZIP com estrutura organizada | OK | ZIP com código, scripts, configurações e .env.example
+Dockerfile funcional | OK | Dockerfile; build e execução comprovados
+docker-compose.yml ou arquivos Kubernetes | OK | Compose: API + Oracle, volume, variáveis e rede
+Pipeline com etapas de build, teste e deploy | OK | Cinco etapas aprovadas; 21 testes; Figura 3
+README.md com instruções e prints | OK | README.md e docs/prints/
+Documentação técnica com evidências (PDF ou PPT) | OK | Este PDF e seus seis tópicos solicitados
+Deploy realizado nos ambientes staging e produção | OK | Figura 4; health UP e smoke test em ambos

@@ -46,13 +46,13 @@
   },
   {
     "path": "docs/conteudo-relatorio.md",
-    "sha256": "3cc80e6aac35ca9cb8264d4930f9cef5b19dc30030e7064a85def7602609a841",
-    "bytes": 20784
+    "sha256": "09dfc86e5d2f69bfa5055bbf186652c9546558dc5b050cf67fb3b75750d9094c",
+    "bytes": 20922
   },
   {
     "path": "docs/Documentacao-Tecnica-ESG-DevOps.pdf",
-    "sha256": "a60b5c8d0777db1a3195fd6a27f7fdcfe395f15300719cbc164da0759aea29ce",
-    "bytes": 903542
+    "sha256": "58f395bcbffce4d00999c1850bea4e4eb0174768e31e05f8806f767c6f43a0bf",
+    "bytes": 903406
   },
   {
     "path": "docs/evidencias/github/build-test.log",
@@ -271,8 +271,8 @@
   },
   {
     "path": "README.md",
-    "sha256": "dd9c5adee678eb66d699eaecd2c9a5e7dba3a4caf452a2a1eb3ee688ee3252d9",
-    "bytes": 19814
+    "sha256": "c8d475c4481ca42f288985de74327aabb2cec69b8a50184246215f708d1d1f87",
+    "bytes": 20355
   },
   {
     "path": "scripts/setup-server.sh",

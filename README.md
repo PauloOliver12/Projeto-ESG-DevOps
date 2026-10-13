@@ -305,7 +305,7 @@ docker compose -p esg-production logs -f app         # logs de producao no servi
 
 Alem disso, o job `integration-test` e o smoke test pos-deploy validam a aplicacao rodando de verdade com o Oracle.
 
-## Evidencias de funcionamento
+## Prints do funcionamento
 
 Documentacao tecnica: [PDF](docs/Documentacao-Tecnica-ESG-DevOps.pdf).
 
@@ -374,16 +374,16 @@ Os dados iniciais de demonstracao sao inseridos em `src/main/resources/db/migrat
 
 ## Checklist de entrega
 
-| Item | Situacao em 13/10/2026 |
-|---|---|
-| Projeto organizado em ZIP, sem .env, .git ou target | Preparado |
-| Dockerfile e Compose | Executados com sucesso na integracao e nos deploys |
-| Integrantes | Preenchidos |
-| README e PDF com evidencias locais e do GitHub | Incluidos |
-| API local / Swagger | 10 verificacoes HTTP aprovadas |
-| Suite automatizada | 21 testes aprovados; XML originais incluidos |
-| Pipeline com build, testes, imagem e deploys | Cinco etapas concluidas com sucesso |
-| Deploy realizado em staging e producao | Comprovado no runner; ambientes temporarios |
-| Conferencia com enunciado oficial | Pendente de acesso ao enunciado |
+Conferido em 13/10/2026 com os requisitos e os artefatos de entrega apresentados no enunciado da Fase 6 - Desafio DevOps. O PDF contempla os seis topicos solicitados, incluindo integrantes, pipeline, Docker, prints de execucao, os dois ambientes e desafios resolvidos.
 
-A execucao tecnica esta comprovada pelas evidencias incluidas. A conferencia integral dos criterios academicos depende do enunciado oficial. Como o repositorio e privado, o avaliador precisa receber o ZIP ou obter acesso autorizado ao GitHub.
+Staging e production foram implantados e verificados em runners temporarios. Os prints fornecidos do enunciado nao exigem Azure nem uma URL publica permanente. Como o repositorio e privado, o avaliador precisa receber o ZIP ou obter acesso autorizado ao GitHub.
+
+| Item solicitado no enunciado | OK | Onde verificar |
+|---|:---:|---|
+| Projeto compactado em .ZIP com estrutura organizada | OK | Projeto-ESG-DevOps-Entrega.zip; codigo, scripts, configuracoes e .env.example incluidos |
+| Dockerfile funcional | OK | Dockerfile; build, integracao e deploys concluidos na execucao #2 |
+| docker-compose.yml ou arquivos Kubernetes | OK | docker-compose.yml; API + Oracle, volume, variaveis e rede |
+| Pipeline com etapas de build, teste e deploy | OK | .github/workflows/; cinco etapas aprovadas e 21 testes sem falhas |
+| README.md com instrucoes e prints | OK | Instrucoes de execucao e secao Prints do funcionamento acima |
+| Documentacao tecnica com evidencias (PDF ou PPT) | OK | docs/Documentacao-Tecnica-ESG-DevOps.pdf; seis topicos solicitados |
+| Deploy realizado nos ambientes staging e producao | OK | Execucao #2; health UP, environment correto e smoke test em ambos |
