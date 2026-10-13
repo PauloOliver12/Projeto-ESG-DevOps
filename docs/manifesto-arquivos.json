@@ -1,0 +1,517 @@
+[
+  {
+    "path": ".dockerignore",
+    "sha256": "fe607c2cd9828b03dcfdbe81fc8959044a70e73785942b194f746cea91e26027",
+    "bytes": 142
+  },
+  {
+    "path": ".env.example",
+    "sha256": "87f6310417e7b3d8d7f4005bee5d6e8241eb3ed61b6ec6241543f12bb8d2c5b8",
+    "bytes": 798
+  },
+  {
+    "path": ".gitattributes",
+    "sha256": "99a90da28e984307a9079d2d6f665d7e381a789708cfb3398109c828dd0c0af7",
+    "bytes": 74
+  },
+  {
+    "path": ".github/workflows/ci-cd.yml",
+    "sha256": "b61e9f877780b75d6b190efed27d63e3f706f97c0e0bc581d2080257081192ea",
+    "bytes": 4781
+  },
+  {
+    "path": ".github/workflows/deploy.yml",
+    "sha256": "f0e5eb0ec2178bf1416c20f70e51c7043fdab12377fd2e64402b312522f3cde1",
+    "bytes": 9673
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "732e3f52d7915c186864522bff0de3af58f1b7bc8a724544a16883c42dbd451e",
+    "bytes": 70
+  },
+  {
+    "path": "docker-compose.override.yml",
+    "sha256": "52238c60243abe8a20b6c1b2e0422a54fabcb185c8b5727ac2a782a72e7035f9",
+    "bytes": 258
+  },
+  {
+    "path": "docker-compose.yml",
+    "sha256": "42f88f00bf5f0ec15e5f0787b300b7bfca4aae78faff16d19378e77269ce88ee",
+    "bytes": 1637
+  },
+  {
+    "path": "Dockerfile",
+    "sha256": "731dd243705de49d690084e6752d7bfe391e487ba6638f3c54e91e49d398ddd0",
+    "bytes": 1143
+  },
+  {
+    "path": "docs/conteudo-relatorio.md",
+    "sha256": "7df229a1efb0c014e22ad0f00f1afdc0a16d343dd09b672569ce1e59508ca2fd",
+    "bytes": 21196
+  },
+  {
+    "path": "docs/Documentacao-Tecnica-ESG-DevOps.pdf",
+    "sha256": "a60b5c8d0777db1a3195fd6a27f7fdcfe395f15300719cbc164da0759aea29ce",
+    "bytes": 903542
+  },
+  {
+    "path": "docs/evidencias/github/build-test.log",
+    "sha256": "edcd2ed794c9a5c1ded004f0ba30649af9029514db260978cf8e855b6f651bbb",
+    "bytes": 1158
+  },
+  {
+    "path": "docs/evidencias/github/correcao-deploy.md",
+    "sha256": "f20832ad4b6e9c9e56f1afbb4a5f1913df87bfa6b02c10a3b8fcd096318e6250",
+    "bytes": 954
+  },
+  {
+    "path": "docs/evidencias/github/integration.log",
+    "sha256": "879e9fbb305755f70e300de1a1e1732ec36ed4f63b46aedcc7fa8730673bdcfe",
+    "bytes": 1786
+  },
+  {
+    "path": "docs/evidencias/github/origem.json",
+    "sha256": "aa6610089fdda2bca72cd0c486e434fe740b22150f93187935f6e21aeacfbc55",
+    "bytes": 500
+  },
+  {
+    "path": "docs/evidencias/github/production/production-app.log",
+    "sha256": "9d78d6a0d68d20b770b74bd3eb2fec3080536b91918a7eba075351d7763a447d",
+    "bytes": 7201
+  },
+  {
+    "path": "docs/evidencias/github/production/production-containers.txt",
+    "sha256": "4e623fef7a6c019848f8a311d3c03a0c5cb63312aa45208ea18b177a4e0a8d45",
+    "bytes": 547
+  },
+  {
+    "path": "docs/evidencias/github/production/production-health.json",
+    "sha256": "b9613659d8f4412c778e34293d5b865fb188c5814379ee3bfb8c819432e70020",
+    "bytes": 49
+  },
+  {
+    "path": "docs/evidencias/github/production/production-info.json",
+    "sha256": "8b5baafc9af1976383aa569319445c6fb021428063985d0548957f9e958f20e2",
+    "bytes": 88
+  },
+  {
+    "path": "docs/evidencias/github/production-smoke.log",
+    "sha256": "82df6252203216a2f489b974ec5af94665db029889ec0bce9e0b8efb1eb3102b",
+    "bytes": 1287
+  },
+  {
+    "path": "docs/evidencias/github/publicacao.log",
+    "sha256": "63d4a98219b8d29a994172bd8d55a42992214d2834ca154e04d91e0f920a301f",
+    "bytes": 1037
+  },
+  {
+    "path": "docs/evidencias/github/resultado-ci.json",
+    "sha256": "0ebd383b506e3d1386a8336a2013b7e00735a5417633cdf2e104a689e79098eb",
+    "bytes": 6222
+  },
+  {
+    "path": "docs/evidencias/github/staging/staging-app.log",
+    "sha256": "3d462410c71a4571b0604eb271e91122759192852962f8f3c2c0de741af9db13",
+    "bytes": 7374
+  },
+  {
+    "path": "docs/evidencias/github/staging/staging-containers.txt",
+    "sha256": "7c618b5bec55e5e674d9522acf0e187e6c316fb89df4cbfc9eccf7f47f2cd2d1",
+    "bytes": 538
+  },
+  {
+    "path": "docs/evidencias/github/staging/staging-health.json",
+    "sha256": "b9613659d8f4412c778e34293d5b865fb188c5814379ee3bfb8c819432e70020",
+    "bytes": 49
+  },
+  {
+    "path": "docs/evidencias/github/staging/staging-info.json",
+    "sha256": "ef76c4d4e907fef8cfd73a463e0aab7abae0d932c9586168421146d93c798261",
+    "bytes": 85
+  },
+  {
+    "path": "docs/evidencias/github/staging-smoke.log",
+    "sha256": "d27e31023ac6d70b20ec1cebaaed73edd1b4c38dd8e0f9eac5e7703e5fa3c9f2",
+    "bytes": 1270
+  },
+  {
+    "path": "docs/evidencias/github/surefire-reports/br.com.projetof.esg.controller.LicenseControllerSecurityTest.txt",
+    "sha256": "6e6a06a00add2e30ab1b1e3ea1a1e8bb22b44226612def6184b229c652ec54c8",
+    "bytes": 370
+  },
+  {
+    "path": "docs/evidencias/github/surefire-reports/br.com.projetof.esg.service.AlertServiceTest.txt",
+    "sha256": "ece26fc93107960858c5f65bad79694d828a8ed966b416287bf111b0a6975123",
+    "bytes": 338
+  },
+  {
+    "path": "docs/evidencias/github/surefire-reports/br.com.projetof.esg.service.AuditServiceTest.txt",
+    "sha256": "66dedb739392cc43dddc5fa5df01a95a0e44c9a3eec82f5e4627cb29812da14a",
+    "bytes": 338
+  },
+  {
+    "path": "docs/evidencias/github/surefire-reports/br.com.projetof.esg.service.DashboardServiceTest.txt",
+    "sha256": "0f9b7eb7b9332fbc2df5a4950457f53e3f1715f5f6cf404e6530a799bee1b478",
+    "bytes": 346
+  },
+  {
+    "path": "docs/evidencias/github/surefire-reports/br.com.projetof.esg.service.LicenseServiceTest.txt",
+    "sha256": "66b33fe8dd0cd5ce259c2a6a63f1c238cbd3197778b9118f4775cf4030225e6d",
+    "bytes": 342
+  },
+  {
+    "path": "docs/evidencias/github/surefire-reports/TEST-br.com.projetof.esg.controller.LicenseControllerSecurityTest.xml",
+    "sha256": "cf59ca64248e5f179e9159d18c6c4d0623c985e7964e327c2d2d758af0ca787d",
+    "bytes": 32169
+  },
+  {
+    "path": "docs/evidencias/github/surefire-reports/TEST-br.com.projetof.esg.service.AlertServiceTest.xml",
+    "sha256": "09b49437028b0c80e55a3c83e065ce95a46fab3228d6f72676520bea08e895d6",
+    "bytes": 28900
+  },
+  {
+    "path": "docs/evidencias/github/surefire-reports/TEST-br.com.projetof.esg.service.AuditServiceTest.xml",
+    "sha256": "21e8de4d6eeae8081d0adfe1b608ef8fdfaad4bdc3ef3781d84f170257df24f6",
+    "bytes": 29162
+  },
+  {
+    "path": "docs/evidencias/github/surefire-reports/TEST-br.com.projetof.esg.service.DashboardServiceTest.xml",
+    "sha256": "7cecd768ac2356fa7b01dde8b0b536f4d085738cb45c0ca70499c3ec14c2ec5c",
+    "bytes": 28523
+  },
+  {
+    "path": "docs/evidencias/github/surefire-reports/TEST-br.com.projetof.esg.service.LicenseServiceTest.xml",
+    "sha256": "d8d48d9328ccae0fcbba21a1c1f81b8297372086744e7aca63a65ed119de5f6f",
+    "bytes": 29208
+  },
+  {
+    "path": "docs/evidencias/local/alerts-analyst.json",
+    "sha256": "2406f4e09aaad9844b55cdd5a34bcd944be210d185544ecba8e4c2958671a4df",
+    "bytes": 251
+  },
+  {
+    "path": "docs/evidencias/local/audits-auditor.json",
+    "sha256": "d010c45e13f1bca702c83a2798d127c63a4b5562b75271705ef7a7e4a5a6abca",
+    "bytes": 303
+  },
+  {
+    "path": "docs/evidencias/local/checks.json",
+    "sha256": "5d72787d31c74a8afa83d2ffaa32600ed0b26cac4a9281195e73c45330a33eb7",
+    "bytes": 2762
+  },
+  {
+    "path": "docs/evidencias/local/dashboard-analyst.json",
+    "sha256": "e2fcda3afff2d213882fbfe714bff4c8b31d3520e0a407a632e4f9e6446f482c",
+    "bytes": 121
+  },
+  {
+    "path": "docs/evidencias/local/health.json",
+    "sha256": "4879416e884096d539095b3fc29024a6a3e4791e0fe6b081f7356801503bc71a",
+    "bytes": 77
+  },
+  {
+    "path": "docs/evidencias/local/info.json",
+    "sha256": "e782dedae688859dfb1a85ba8caf5235926398589f07f24fb3e3fa148d4910b3",
+    "bytes": 109
+  },
+  {
+    "path": "docs/evidencias/local/licenses-admin.json",
+    "sha256": "50ad51b985c5f36bc2bd5ab1cbc3f224eda281ebb107f798062ba2f165cf4ad8",
+    "bytes": 374
+  },
+  {
+    "path": "docs/evidencias/local/licenses-anonymous.json",
+    "sha256": "ef3a60feb7d2cc525dc63e850ec8729ac493f3600170ff26c48faef99290b32d",
+    "bytes": 189
+  },
+  {
+    "path": "docs/evidencias/local/licenses-wrong-password.json",
+    "sha256": "79818890585b90674fe92b0f343d705633434e68b675714ecd478b0532ac5eb4",
+    "bytes": 189
+  },
+  {
+    "path": "docs/evidencias/local/openapi.json",
+    "sha256": "fe6cb08aef9fb4983948c447c1f094e753d6ddd25209b5d7f65665eafe71ba7e",
+    "bytes": 16774
+  },
+  {
+    "path": "docs/prints/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "docs/prints/01-swagger-local.jpg",
+    "sha256": "9fe9e6d4daef1ccfb72eeeabb166826c56be470cacb751925e19b2c99ac7f4ef",
+    "bytes": 194437
+  },
+  {
+    "path": "docs/prints/02-pipeline-github.jpg",
+    "sha256": "67e65941f1e468067f6094127a6fa18224b4c6b28366c97b10633d0b7ea7fa0b",
+    "bytes": 162163
+  },
+  {
+    "path": "docs/prints/03-deploys-github.jpg",
+    "sha256": "1b8cca5ae168c8c399c8052217494c2bb78dfa7d9b619b64b259ab7da4281a67",
+    "bytes": 142725
+  },
+  {
+    "path": "docs/prints/04-pacote-ghcr.jpg",
+    "sha256": "0daae665a2e3dcdfc7dc7bc7249807d506b2516404918ed94944d1798895a9e7",
+    "bytes": 128145
+  },
+  {
+    "path": "PASSO-A-PASSO.md",
+    "sha256": "2a9e7f2481bdd935134c4cee866184ddf9a733160547e20bd883065ddd1f5ad4",
+    "bytes": 19410
+  },
+  {
+    "path": "pom.xml",
+    "sha256": "ddd47f30110eba05342352320ff026b03f7a94cad3a3a692515cc6b9c248e7e8",
+    "bytes": 3010
+  },
+  {
+    "path": "README.md",
+    "sha256": "8d19482daf4862a5d16dcd1ac532ea9be59bd14189bcb68fe6eb1511a0f7ac2b",
+    "bytes": 20203
+  },
+  {
+    "path": "scripts/setup-server.sh",
+    "sha256": "a279d67d90610d9a16e729c7e2b5ba8d116198e1e5f6201ac728576317a5fe7b",
+    "bytes": 750
+  },
+  {
+    "path": "scripts/smoke-test.sh",
+    "sha256": "8200ed64a0a2754385e8c9634357c69398c9aa60a3509c4e3c6ed85c587788c7",
+    "bytes": 1600
+  },
+  {
+    "path": "scripts/validar-entrega.ps1",
+    "sha256": "e1739b1a703c2fb66f9af4ffcea78ea91b6b712b5957b775d548ea76c21c16cf",
+    "bytes": 2255
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/config/JsonAccessDeniedHandler.java",
+    "sha256": "8e92df7f0098577ba00d5b4b85f608e49f7e473e1492964f9ecab3c999cdfa60",
+    "bytes": 1562
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/config/JsonAuthenticationEntryPoint.java",
+    "sha256": "e0ceda8e3667748779c8e40b9ed4577e0217b3b54972485dca5739453243648a",
+    "bytes": 1604
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/config/OpenApiConfig.java",
+    "sha256": "0458e22295a904cd70fc00fedda87b5883970b50a8731d0d109698db6ea4210d",
+    "bytes": 770
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/config/SecurityConfig.java",
+    "sha256": "e43a9392be70b614139d3e4c35c97d8543d88c8d6ecee3ddb39663751a204627",
+    "bytes": 3424
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/controller/AlertController.java",
+    "sha256": "29374e1a0f6383b65146184cceff2276c537ce4afc0840fb728a827b730fb54a",
+    "bytes": 2044
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/controller/AuditController.java",
+    "sha256": "2a1412c555f9789f97d1a237803387fb615571877b5b2c768358ac362e31a464",
+    "bytes": 1570
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/controller/DashboardController.java",
+    "sha256": "575cd3c4702a82b44970b69fbf3bf6ab6dac017137e55b186803ac664ff83c4c",
+    "bytes": 882
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/controller/LicenseController.java",
+    "sha256": "ea5e44730cda19993553c19db641f105c76b0c27ad4241e458f07df51e3b4622",
+    "bytes": 2481
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/domain/AlertSeverity.java",
+    "sha256": "5458ee7d1fd6c17f489e8ece1c236c057410f6342763bdd19ea50a93507bf0f1",
+    "bytes": 119
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/domain/AuditStatus.java",
+    "sha256": "bd3af3e37f1b3036c322ac2cd6afd8f8f77937f1a5b75fa7203fa4ba79ae771e",
+    "bytes": 134
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/domain/LicenseStatus.java",
+    "sha256": "56aee0de657f2d50ba1ecbae97e6f42425b605fc22acc3f4678862743ac89238",
+    "bytes": 133
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/dto/AlertResponse.java",
+    "sha256": "a396356eec722bceddc510cccc2612c260585422bfe71467582a084b8df6b49d",
+    "bytes": 820
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/dto/ApiErrorResponse.java",
+    "sha256": "db55b9a5944c2d0a2246a8702c69009fa9d031bf9be067362632ea86cab036fc",
+    "bytes": 279
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/dto/AuditResponse.java",
+    "sha256": "7ce8c650a686586249418aafef2dcb7ff9aa4e80a44fa05ad892fc6522606a44",
+    "bytes": 893
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/dto/CreateAlertRequest.java",
+    "sha256": "83fd4118d263242dc3b2e9ed8d9c436f8f32685b3131ce2fb864138ef469ca71",
+    "bytes": 486
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/dto/CreateAuditRequest.java",
+    "sha256": "9c3c4a97e3f871e765b670c76970c364f0f11d8d4f128ed012d9f4eaf7d2036c",
+    "bytes": 581
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/dto/CreateLicenseRequest.java",
+    "sha256": "8988e030a3e8279e6c98d38550c16d079955eebcb5c37d7ae282012f4b2aff3f",
+    "bytes": 696
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/dto/DashboardSummaryResponse.java",
+    "sha256": "6ccb3e9cd7fce17ab2bfbf1245b823bcd56d4a969c42c0661f1d841864b8ae9a",
+    "bytes": 232
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/dto/LicenseResponse.java",
+    "sha256": "38672305980075d49c3b429ec55359a865c776e5e6314ec1c49504509658dec9",
+    "bytes": 1070
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/dto/UpdateLicenseRequest.java",
+    "sha256": "3b3513879b52c8d0f6fefff8691b8e5e1e1fbd3bbe1127e5d7eba347b5533b9d",
+    "bytes": 696
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/entity/ComplianceAlert.java",
+    "sha256": "365943dc1fef4df5b718c8d20c1c8577ebc063b2ecb86aa0513b93008079b896",
+    "bytes": 2314
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/entity/EnvironmentalLicense.java",
+    "sha256": "d308d2724a1a2ffca28d2ccb7bb39bd39dd9c5134ab120008fdfe57b56812d01",
+    "bytes": 3218
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/entity/InternalAudit.java",
+    "sha256": "e8721612df7fbeecd257298dae7db5264f28b209e8a4caeabedc2e081a10734d",
+    "bytes": 2624
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/EsgComplianceApiApplication.java",
+    "sha256": "33166fb0b1714ea244f4a632054bf9baaa48e9b357617c698476a77a692c6393",
+    "bytes": 355
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/exception/BusinessRuleException.java",
+    "sha256": "9eb753dddb643e81aec51f8117aa024abae4a1c7a97f7ac65855fabf690c353f",
+    "bytes": 194
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/exception/ConflictException.java",
+    "sha256": "72540590321dacd183125ccac79edcd3ef64a137eeb939fc6cbea1ba05e6bb4f",
+    "bytes": 186
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/exception/GlobalExceptionHandler.java",
+    "sha256": "a521ffa57d8d6f36fd763bc4d4bda23370e1452c7a5b888a1a5a688e28178fb0",
+    "bytes": 3018
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/exception/ResourceNotFoundException.java",
+    "sha256": "f1b1cccb9d292a0c0c303bf3a4cc24cd99d8613c55d17922b9c600a509b7fa03",
+    "bytes": 202
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/repository/ComplianceAlertRepository.java",
+    "sha256": "f495481bc652a7787250bf2f3aa2e7cfee8e247963b1ca01d1ae0216b346d2bb",
+    "bytes": 379
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/repository/EnvironmentalLicenseRepository.java",
+    "sha256": "dbc1c05c3a95b86233b732095606a19b2490f29f78908011818ff4111fe5c4cb",
+    "bytes": 695
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/repository/InternalAuditRepository.java",
+    "sha256": "66ed07e81bdb6c85d159a10d60616ca95cfaa0c0cd2646c36453636d4d82c8d9",
+    "bytes": 430
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/service/AlertService.java",
+    "sha256": "f4fa0fd1a4f631bfeff77ff6df7c42a96d75497ef519da662d1ab4943cbe43d1",
+    "bytes": 2636
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/service/AuditService.java",
+    "sha256": "687b7dae3dcc6d70eaf349449bebbf8f8e9b4f78f1222170bab81bf78ba2b9c6",
+    "bytes": 2125
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/service/DashboardService.java",
+    "sha256": "f94bdd3c3d082800ee176401e0dd2c018749ca63bd9d86e632c60cca410b3c6d",
+    "bytes": 1874
+  },
+  {
+    "path": "src/main/java/br/com/projetof/esg/service/LicenseService.java",
+    "sha256": "749061aa447b5b90ccd3a5398845cb1c57fd9ee3825e1f43e855d55bc233723a",
+    "bytes": 4372
+  },
+  {
+    "path": "src/main/resources/application-production.yml",
+    "sha256": "99b5155d3596af6bf7c659aac12eef74b698ff0977c0f4d8ea003c9e7f666254",
+    "bytes": 434
+  },
+  {
+    "path": "src/main/resources/application-staging.yml",
+    "sha256": "9c526e16a7cb2605ae7e3d4317082ab290cbdfbcc215d9bb5bacc3f933756635",
+    "bytes": 49
+  },
+  {
+    "path": "src/main/resources/application.yml",
+    "sha256": "d951de1d274260e9e141001add197069e37a3ea79ebaac6a89cb621ab44ee872",
+    "bytes": 1177
+  },
+  {
+    "path": "src/main/resources/db/migration/V1__init.sql",
+    "sha256": "b06e67f641bfbcce9844387d4d52ef950731c16097fb87d507f830eae30b66df",
+    "bytes": 1832
+  },
+  {
+    "path": "src/main/resources/db/migration/V2__seed_data.sql",
+    "sha256": "ff8b77428d333303168c18106f22fc4f22170d1a7cc6cbc2c1c989a5e6262c40",
+    "bytes": 993
+  },
+  {
+    "path": "src/test/java/br/com/projetof/esg/controller/LicenseControllerSecurityTest.java",
+    "sha256": "97ec6e2a17bdadc60eb6c8575288a571147dd5c7fdc21e4c0091f47b14709b3a",
+    "bytes": 5873
+  },
+  {
+    "path": "src/test/java/br/com/projetof/esg/service/AlertServiceTest.java",
+    "sha256": "b946eef7e6b1479ddd5bc2bd08558e15eefb58451162001cc20bba4d0de91e57",
+    "bytes": 3266
+  },
+  {
+    "path": "src/test/java/br/com/projetof/esg/service/AuditServiceTest.java",
+    "sha256": "361bb3b1e16cfc2c03bfbe7717d0300d349550daccf8170e344240354f7e7b3a",
+    "bytes": 2378
+  },
+  {
+    "path": "src/test/java/br/com/projetof/esg/service/DashboardServiceTest.java",
+    "sha256": "445270e368809061b88bb0d3aa7e20e15b2cef09932fa90f0bb99879ad247681",
+    "bytes": 1771
+  },
+  {
+    "path": "src/test/java/br/com/projetof/esg/service/LicenseServiceTest.java",
+    "sha256": "f088be6ea57be81945e824c17321e6dfeb294885663a6eea7d203c83d3ac7519",
+    "bytes": 5170
+  }
+]

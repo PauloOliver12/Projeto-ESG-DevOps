@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "code": "LIC-2026-001",
+    "companyName": "EcoLog Brasil",
+    "licenseType": "Operacao de Residuos",
+    "status": "ACTIVE",
+    "issuedAt": "2026-01-10",
+    "expiresAt": "2027-01-10",
+    "responsibleEmail": "compliance@ecolog.com.br",
+    "createdAt": "2026-10-13T01:27:02.491915",
+    "updatedAt": "2026-10-13T01:27:02.491915"
+  }
+]

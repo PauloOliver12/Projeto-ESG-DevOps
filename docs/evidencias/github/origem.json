@@ -1,0 +1,18 @@
+{
+  "repository": "PauloOliver12/Projeto-ESG-DevOps",
+  "private": true,
+  "run_id": 38474933261,
+  "run_url": "https://github.com/PauloOliver12/Projeto-ESG-DevOps/actions/runs/38474933261",
+  "commit": "35720db097f427cdaa9678af685a9d498d8d70a9",
+  "test_artifact": {
+    "id": 11854015084,
+    "name": "relatorios-testes",
+    "sha256": "4383b2d858e1a456ca026baf858e05c1ce7ccbe8b1c5f433f2d615bed94681c0"
+  },
+  "tests": {
+    "total": 21,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

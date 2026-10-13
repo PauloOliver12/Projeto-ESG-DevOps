@@ -1,0 +1,11 @@
+# Trechos do log oficial GitHub Actions, run 38474933261, job 115565885313.
+2026-10-13T22:10:17.6436752Z esg-production-oracle-db-1   gvenzl/oracle-free:23-slim-faststart                   "container-entrypoin…"   oracle-db   26 seconds ago   Up 11 seconds (healthy)                    
+2026-10-13T22:10:37.9272437Z OK: health UP
+2026-10-13T22:10:37.9584110Z Info: {"app":{"name":"esg-compliance-api","environment":"production","version":"sha-35720db"}}
+2026-10-13T22:10:38.0078693Z OK: endpoint protegido retorna 401 sem credenciais
+2026-10-13T22:10:38.0510060Z OK: Swagger UI disponivel (302)
+2026-10-13T22:10:38.8275613Z {"totalLicenses":1,"activeLicenses":1,"expiringIn30Days":0,"openAlerts":1,"scheduledAudits":1}
+2026-10-13T22:10:38.8280574Z OK: dashboard autenticado respondeu
+2026-10-13T22:10:38.8282968Z >> Smoke test concluido com sucesso
+2026-10-13T22:10:39.1028867Z esg-production-app-1         ghcr.io/paulooliver12/esg-compliance-api:sha-35720db   "sh -c 'exec java $J…"   app         32 seconds ago   Up 21 seconds (healthy)   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp
+2026-10-13T22:10:39.1031910Z esg-production-oracle-db-1   gvenzl/oracle-free:23-slim-faststart                   "container-entrypoin…"   oracle-db   47 seconds ago   Up 32 seconds (healthy)   

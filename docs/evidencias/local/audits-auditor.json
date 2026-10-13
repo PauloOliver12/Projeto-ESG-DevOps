@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "licenseId": 1,
+    "licenseCode": "LIC-2026-001",
+    "auditorName": "Marina Duarte",
+    "scheduledAt": "2026-06-10T09:00:00",
+    "status": "SCHEDULED",
+    "findings": "Auditoria preventiva para renovacao anual.",
+    "createdAt": "2026-10-13T01:27:02.503059"
+  }
+]

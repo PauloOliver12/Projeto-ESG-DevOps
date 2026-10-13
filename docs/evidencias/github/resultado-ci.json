@@ -1,0 +1,172 @@
+{
+  "repository": "PauloOliver12/Projeto-ESG-DevOps",
+  "private": true,
+  "run_id": 38474933261,
+  "run_number": 2,
+  "run_url": "https://github.com/PauloOliver12/Projeto-ESG-DevOps/actions/runs/38474933261",
+  "commit": "35720db097f427cdaa9678af685a9d498d8d70a9",
+  "status": "completed",
+  "conclusion": "success",
+  "started_at": "2026-10-13T22:02:01Z",
+  "updated_at": "2026-10-13T22:10:45Z",
+  "image": "ghcr.io/paulooliver12/esg-compliance-api:sha-35720db",
+  "image_digest": "sha256:c4faceecbbb23245ec592a6d40dd38f8888ceec98376e8bab2619ef0103f9fdd",
+  "package_private": true,
+  "deploy_mode": "runner",
+  "manual_approval": false,
+  "tests": {
+    "tests": 21,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "jobs": [
+    {
+      "id": 115563176509,
+      "name": "1. Build e testes",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 38474933261,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115563451213,
+      "name": "2. Teste de integracao (Docker Compose)",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 38474933261,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115564680524,
+      "name": "3. Publicar imagem Docker (GHCR)",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 38474933261,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115565110756,
+      "name": "4. Deploy staging / Deploy em staging",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 38474933261,
+      "logs_url": null,
+      "steps": null
+    },
+    {
+      "id": 115565885313,
+      "name": "5. Deploy producao / Deploy em production",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 38474933261,
+      "logs_url": null,
+      "steps": null
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 11854525150,
+      "name": "evidencias-staging",
+      "size_in_bytes": 2942,
+      "url": "https://api.github.com/repos/PauloOliver12/Projeto-ESG-DevOps/actions/artifacts/11854525150",
+      "archive_download_url": "https://api.github.com/repos/PauloOliver12/Projeto-ESG-DevOps/actions/artifacts/11854525150/zip",
+      "expired": false,
+      "created_at": "2026-10-13T22:08:45Z",
+      "expires_at": "2026-11-12T22:08:44Z",
+      "updated_at": "2026-10-13T22:08:45Z",
+      "digest": "sha256:cdb3afb9731afe42556356ba3383bd0347147a39beff9eb30433c006a54735bb",
+      "workflow_run": {
+        "id": 38474933261,
+        "repository_id": 1418053800,
+        "head_repository_id": 1418053800,
+        "head_branch": "main",
+        "head_sha": "35720db097f427cdaa9678af685a9d498d8d70a9"
+      }
+    },
+    {
+      "id": 11854220940,
+      "name": "evidencias-production",
+      "size_in_bytes": 2949,
+      "url": "https://api.github.com/repos/PauloOliver12/Projeto-ESG-DevOps/actions/artifacts/11854220940",
+      "archive_download_url": "https://api.github.com/repos/PauloOliver12/Projeto-ESG-DevOps/actions/artifacts/11854220940/zip",
+      "expired": false,
+      "created_at": "2026-10-13T22:10:40Z",
+      "expires_at": "2026-11-12T22:10:39Z",
+      "updated_at": "2026-10-13T22:10:40Z",
+      "digest": "sha256:f423d4646e29e31f013c2167fb900a8fdda423761a2ae7f9bf45c75afe3f6590",
+      "workflow_run": {
+        "id": 38474933261,
+        "repository_id": 1418053800,
+        "head_repository_id": 1418053800,
+        "head_branch": "main",
+        "head_sha": "35720db097f427cdaa9678af685a9d498d8d70a9"
+      }
+    },
+    {
+      "id": 11854015084,
+      "name": "relatorios-testes",
+      "size_in_bytes": 20650,
+      "url": "https://api.github.com/repos/PauloOliver12/Projeto-ESG-DevOps/actions/artifacts/11854015084",
+      "archive_download_url": "https://api.github.com/repos/PauloOliver12/Projeto-ESG-DevOps/actions/artifacts/11854015084/zip",
+      "expired": false,
+      "created_at": "2026-10-13T22:02:35Z",
+      "expires_at": "2027-01-11T22:02:01Z",
+      "updated_at": "2026-10-13T22:02:35Z",
+      "digest": "sha256:4383b2d858e1a456ca026baf858e05c1ce7ccbe8b1c5f433f2d615bed94681c0",
+      "workflow_run": {
+        "id": 38474933261,
+        "repository_id": 1418053800,
+        "head_repository_id": 1418053800,
+        "head_branch": "main",
+        "head_sha": "35720db097f427cdaa9678af685a9d498d8d70a9"
+      }
+    },
+    {
+      "id": 11853673339,
+      "name": "PauloOliver12~Projeto-ESG-DevOps~6BDDYO.dockerbuild",
+      "size_in_bytes": 64114,
+      "url": "https://api.github.com/repos/PauloOliver12/Projeto-ESG-DevOps/actions/artifacts/11853673339",
+      "archive_download_url": "https://api.github.com/repos/PauloOliver12/Projeto-ESG-DevOps/actions/artifacts/11853673339/zip",
+      "expired": false,
+      "created_at": "2026-10-13T22:06:48Z",
+      "expires_at": "2027-01-11T22:02:01Z",
+      "updated_at": "2026-10-13T22:06:48Z",
+      "digest": "sha256:34c2cbb82ae2d724134c5eb67cb4cbfa81b4723f193bd03913d95d9eb092bf0c",
+      "workflow_run": {
+        "id": 38474933261,
+        "repository_id": 1418053800,
+        "head_repository_id": 1418053800,
+        "head_branch": "main",
+        "head_sha": "35720db097f427cdaa9678af685a9d498d8d70a9"
+      }
+    },
+    {
+      "id": 11853193710,
+      "name": "esg-compliance-api-jar",
+      "size_in_bytes": 59280588,
+      "url": "https://api.github.com/repos/PauloOliver12/Projeto-ESG-DevOps/actions/artifacts/11853193710",
+      "archive_download_url": "https://api.github.com/repos/PauloOliver12/Projeto-ESG-DevOps/actions/artifacts/11853193710/zip",
+      "expired": false,
+      "created_at": "2026-10-13T22:02:39Z",
+      "expires_at": "2027-01-11T22:02:01Z",
+      "updated_at": "2026-10-13T22:02:39Z",
+      "digest": "sha256:0eb89c4190c6f48e7c8bc5ed213348447db4ba05ca3ad01bfdae70c5b572981e",
+      "workflow_run": {
+        "id": 38474933261,
+        "repository_id": 1418053800,
+        "head_repository_id": 1418053800,
+        "head_branch": "main",
+        "head_sha": "35720db097f427cdaa9678af685a9d498d8d70a9"
+      }
+    }
+  ],
+  "previous_run": {
+    "id": 38473475479,
+    "conclusion": "failure",
+    "reason": "Staging: credenciais divergentes por precedencia de variaveis vazias do processo; corrigido em deploy.yml."
+  }
+}

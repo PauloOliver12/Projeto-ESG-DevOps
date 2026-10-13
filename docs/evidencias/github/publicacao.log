@@ -1,0 +1,7 @@
+# Trechos do log oficial GitHub Actions, run 38474933261, job 115564680524.
+2026-10-13T22:06:30.2142067Z #20 exporting manifest list sha256:c4faceecbbb23245ec592a6d40dd38f8888ceec98376e8bab2619ef0103f9fdd done
+2026-10-13T22:06:36.5805134Z #20 pushing manifest for ghcr.io/paulooliver12/esg-compliance-api:sha-35720db@sha256:c4faceecbbb23245ec592a6d40dd38f8888ceec98376e8bab2619ef0103f9fdd 1.7s done
+2026-10-13T22:06:36.5807378Z #20 pushing manifest for ghcr.io/paulooliver12/esg-compliance-api:latest@sha256:c4faceecbbb23245ec592a6d40dd38f8888ceec98376e8bab2619ef0103f9fdd
+2026-10-13T22:06:37.8351303Z #20 pushing manifest for ghcr.io/paulooliver12/esg-compliance-api:latest@sha256:c4faceecbbb23245ec592a6d40dd38f8888ceec98376e8bab2619ef0103f9fdd 1.1s done
+2026-10-13T22:06:46.0653922Z   "containerimage.digest": "sha256:c4faceecbbb23245ec592a6d40dd38f8888ceec98376e8bab2619ef0103f9fdd",
+2026-10-13T22:06:46.0655238Z   "image.name": "ghcr.io/paulooliver12/esg-compliance-api:sha-35720db,ghcr.io/paulooliver12/esg-compliance-api:latest"

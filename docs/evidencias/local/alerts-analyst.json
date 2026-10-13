@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "licenseId": 1,
+    "licenseCode": "LIC-2026-001",
+    "severity": "HIGH",
+    "message": "Licenca proxima do vencimento em menos de 30 dias.",
+    "resolved": false,
+    "createdAt": "2026-10-13T01:27:02.507075"
+  }
+]

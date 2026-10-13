@@ -1,0 +1,7 @@
+{
+  "app": {
+    "name": "esg-compliance-api",
+    "environment": "local",
+    "version": "local"
+  }
+}

@@ -1,0 +1,13 @@
+# Trechos do log oficial GitHub Actions, run 38474933261, job 115563451213.
+2026-10-13T22:05:42.3236628Z OK: health UP
+2026-10-13T22:05:42.3564784Z Info: {"app":{"name":"esg-compliance-api","environment":"local","version":"local"}}
+2026-10-13T22:05:42.4046323Z OK: endpoint protegido retorna 401 sem credenciais
+2026-10-13T22:05:42.4368797Z OK: Swagger UI disponivel (302)
+2026-10-13T22:05:43.1820409Z {"totalLicenses":1,"activeLicenses":1,"expiringIn30Days":0,"openAlerts":1,"scheduledAudits":1}
+2026-10-13T22:05:43.1821588Z OK: dashboard autenticado respondeu
+2026-10-13T22:05:43.1822198Z >> Smoke test concluido com sucesso
+2026-10-13T22:05:43.3135078Z esg-local-app-1         esg-compliance-api:local               "sh -c 'exec java $J…"   app         33 seconds ago   Up 21 seconds (healthy)   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp
+2026-10-13T22:05:43.3137109Z esg-local-oracle-db-1   gvenzl/oracle-free:23-slim-faststart   "container-entrypoin…"   oracle-db   51 seconds ago   Up 32 seconds (healthy)   0.0.0.0:1521->1521/tcp, [::]:1521->1521/tcp
+2026-10-13T22:05:43.4079419Z app-1  | 2026-10-13T22:05:32.871Z  INFO 1 --- [esg-compliance-api] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:oracle:thin:@oracle-db:1521/FREEPDB1 (Oracle 23.26)
+2026-10-13T22:05:43.4117941Z app-1  | 2026-10-13T22:05:35.261Z  INFO 1 --- [esg-compliance-api] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PROJETOF", now at version v2 (execution time 00:00.124s)
+2026-10-13T22:05:43.4142377Z app-1  | 2026-10-13T22:05:41.081Z  INFO 1 --- [esg-compliance-api] [           main] b.c.p.esg.EsgComplianceApiApplication    : Started EsgComplianceApiApplication in 17.239 seconds (process running for 19.04)

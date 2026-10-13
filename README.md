@@ -69,7 +69,7 @@ Governanca e compliance ambiental.
 
 ## Perfis de acesso
 
-Usuarios padrao do ambiente **local**. Em staging e producao as senhas vem de GitHub Secrets (o perfil `production` nao possui senhas padrao e a aplicacao nao sobe sem elas).
+Usuarios padrao do ambiente **local**. No workflow de staging e producao, as senhas vem de GitHub Secrets ou sao geradas aleatoriamente para o runner. O perfil production exige variaveis, mas o Compose base tem fallbacks locais: substitua-os ao executar fora do workflow.
 
 | Usuario | Senha (local) | Permissao |
 |---|---|---|
@@ -163,7 +163,7 @@ flowchart LR
     B --> C[2. Teste de integracao<br/>docker compose + smoke test]
     C -->|somente push na main| D[3. Build e push da imagem<br/>GHCR :sha-xxxxxxx]
     D --> E[4. Deploy staging<br/>compose pull/up + smoke test]
-    E --> F[5. Deploy producao<br/>aprovacao + compose pull/up + smoke test]
+    E --> F[5. Deploy producao<br/>compose pull/up + smoke test]
 ```
 
 | Etapa | Job | O que faz |
@@ -211,7 +211,7 @@ Para o deploy em **servidor**, em **Settings -> Environments**, crie os environm
 | Variable | `APP_URL` | URL publica, ex.: `http://<ip>:8081/swagger-ui.html` |
 | Variable (opcional) | `SSH_PORT`, `JAVA_OPTS` | Padrao `22` e `-Xms256m -Xmx512m` |
 
-No environment `production`, habilite **Required reviewers** para exigir aprovacao antes do deploy em producao.
+A execucao documentada promoveu staging para production automaticamente. Se a atividade exigir aprovacao manual, configure **Required reviewers** no environment `production`, quando disponivel no plano.
 
 > Use senhas apenas com letras, numeros e `@` / `_` (restricao do Oracle e do arquivo `.env`).
 
@@ -269,11 +269,11 @@ ENTRYPOINT ["sh", "-c", "exec java $JAVA_OPTS -jar /app/app.jar"]
 
 Estrategias adotadas:
 
-- **Multi-stage build:** o Maven/JDK ficam apenas na etapa de build; a imagem final contem so o JRE Alpine e o `.jar`, ficando bem menor.
+- **Multi-stage build:** o Maven/JDK ficam apenas na etapa de build; a imagem final contem o JRE Alpine e o `.jar`, sem as ferramentas de build. Nao foi medida a reducao de tamanho nesta entrega.
 - **Cache de dependencias:** `pom.xml` e copiado e resolvido antes do codigo, entao alteracoes no `src` nao baixam as dependencias de novo (no CI tambem ha cache via `cache-from: type=gha`).
 - **Usuario nao-root:** a aplicacao roda com o usuario `app`.
 - **Healthcheck:** o Docker monitora `/actuator/health`.
-- **Configuracao externa:** nenhuma senha na imagem; tudo vem de variaveis de ambiente (12-factor). `JAVA_OPTS` permite ajustar memoria por ambiente.
+- **Configuracao externa:** conexao, perfil e credenciais sao parametrizados por variaveis. Os valores locais de demonstracao devem ser substituidos; o workflow fornece credenciais geradas ou Secrets. `JAVA_OPTS` permite ajustar memoria por ambiente.
 - **Versionamento:** a imagem recebe a versao (`sha-<commit>`), exposta em `/actuator/info`.
 
 ### Orquestracao (Docker Compose)
@@ -309,6 +309,30 @@ Alem disso, o job `integration-test` e o smoke test pos-deploy validam a aplicac
 
 Documentacao tecnica: [PDF](docs/Documentacao-Tecnica-ESG-DevOps.pdf).
 
+Repositorio **privado**: [PauloOliver12/Projeto-ESG-DevOps](https://github.com/PauloOliver12/Projeto-ESG-DevOps).
+
+### Pipeline completo aprovado
+
+[Execucao #2 no GitHub Actions](https://github.com/PauloOliver12/Projeto-ESG-DevOps/actions/runs/38474933261), em 13/10/2026, commit `35720db097f427cdaa9678af685a9d498d8d70a9`.
+
+| Etapa | Resultado |
+|---|---|
+| Build e testes | 21 testes; 0 falhas; 0 erros; 0 ignorados |
+| Integracao com Oracle | Smoke test aprovado; containers healthy; 2 migracoes aplicadas |
+| Publicacao GHCR | `ghcr.io/paulooliver12/esg-compliance-api:sha-35720db` |
+| Staging no runner | Smoke test aprovado; health UP; environment staging |
+| Producao no runner | Smoke test aprovado; health UP; environment production |
+
+![Pipeline concluido no GitHub](docs/prints/02-pipeline-github.jpg)
+
+![Resumos reais dos deploys](docs/prints/03-deploys-github.jpg)
+
+O pacote do GHCR e privado. Os deploys utilizaram a mesma referencia de imagem e informaram `version: sha-35720db`. A promocao para production foi automatica apos staging, sem aprovacao manual.
+
+A primeira execucao revelou uma divergencia de credenciais no runner. A causa e a correcao do workflow estao registradas em [correcao-deploy.md](docs/evidencias/github/correcao-deploy.md); os resultados desta entrega pertencem a execucao #2, apos a correcao.
+
+Metadados, identificadores e hashes dos artefatos: [resultado-ci.json](docs/evidencias/github/resultado-ci.json). Evidencias originais: [staging](docs/evidencias/github/staging/) e [production](docs/evidencias/github/production/). Log resumido da integracao: [integration.log](docs/evidencias/github/integration.log).
+
 ### Validacao local de 13/10/2026
 
 Foram executadas 10 verificacoes HTTP, todas com o status esperado. Health retornou UP; info identificou o ambiente local; endpoints sem credenciais ou com senha incorreta retornaram 401; consultas autenticadas, OpenAPI e Swagger responderam.
@@ -319,7 +343,7 @@ Respostas originais e horario de coleta: [checks.json](docs/evidencias/local/che
 
 ### Suite automatizada
 
-Existem 21 testes em `src/test`. A execucao anterior foi relatada na conversa de validacao; os XML originais ainda precisam ser coletados para comprovar o resultado nesta entrega.
+Os 21 testes foram executados pelo Maven no GitHub Actions e todos passaram. Os cinco XML originais estao em [surefire-reports](docs/evidencias/github/surefire-reports/), extraidos do artefato `relatorios-testes`. O SHA-256 do ZIP baixado confere com o digest publicado pelo GitHub.
 
 Com Docker Desktop ativo, rode em um PowerShell normal:
 
@@ -329,17 +353,7 @@ Com Docker Desktop ativo, rode em um PowerShell normal:
 
 O script roda Maven em container, salva os relatorios em `docs/evidencias/validacao-local`, consulta a API e preserva os containers existentes. Nao faz commit, push ou deploy.
 
-### Evidencias ainda pendentes no GitHub
-
-O pipeline nao havia sido executado ate esta revisao. Apos a execucao, guardar:
-
-1. URL e commit da execucao, com as cinco etapas concluidas.
-2. Resumo Surefire e artefato `relatorios-testes`.
-3. Log do smoke test de integracao.
-4. Imagem publicada no GHCR, com tag e digest.
-5. Deploy staging e artefato `evidencias-staging`.
-6. Deploy producao e artefato `evidencias-production`.
-7. Aprovacao de producao, se Required reviewers estiver configurado.
+### Alcance da validacao
 
 No modo runner nao existe URL publica permanente para staging/producao. Os ambientes existem durante o job. Nao interpretar jobs ignorados como deploy bem-sucedido.
 
@@ -363,13 +377,13 @@ Os dados iniciais de demonstracao sao inseridos em `src/main/resources/db/migrat
 | Item | Situacao em 13/10/2026 |
 |---|---|
 | Projeto organizado em ZIP, sem .env, .git ou target | Preparado |
-| Dockerfile e Compose | Presentes; Compose validado estaticamente |
+| Dockerfile e Compose | Executados com sucesso na integracao e nos deploys |
 | Integrantes | Preenchidos |
-| README e PDF com evidencia local | Incluidos |
+| README e PDF com evidencias locais e do GitHub | Incluidos |
 | API local / Swagger | 10 verificacoes HTTP aprovadas |
-| Suite automatizada | 21 testes no codigo; XML da execucao pendente |
-| Pipeline com build, testes, imagem e deploys | Implementado; execucao no GitHub pendente |
-| Deploy realizado em staging e producao | Pendente |
+| Suite automatizada | 21 testes aprovados; XML originais incluidos |
+| Pipeline com build, testes, imagem e deploys | Cinco etapas concluidas com sucesso |
+| Deploy realizado em staging e producao | Comprovado no runner; ambientes temporarios |
 | Conferencia com enunciado oficial | Pendente de acesso ao enunciado |
 
-O pacote ainda precisa das evidencias do pipeline antes de ser considerado uma entrega DevOps integralmente comprovada.
+A execucao tecnica esta comprovada pelas evidencias incluidas. A conferencia integral dos criterios academicos depende do enunciado oficial. Como o repositorio e privado, o avaliador precisa receber o ZIP ou obter acesso autorizado ao GitHub.

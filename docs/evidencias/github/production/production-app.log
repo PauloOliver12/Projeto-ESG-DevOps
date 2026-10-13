@@ -1,0 +1,45 @@
+app-1  | 
+app-1  |   .   ____          _            __ _ _
+app-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+app-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+app-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+app-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+app-1  |  =========|_|==============|___/=/_/_/_/
+app-1  | 
+app-1  |  :: Spring Boot ::                (v3.3.5)
+app-1  | 
+app-1  | 2026-10-13T22:10:20.366Z  INFO 1 --- [esg-compliance-api] [           main] b.c.p.esg.EsgComplianceApiApplication    : Starting EsgComplianceApiApplication v1.0.0 using Java 21.0.12.1 with PID 1 (/app/app.jar started by app in /app)
+app-1  | 2026-10-13T22:10:20.369Z  INFO 1 --- [esg-compliance-api] [           main] b.c.p.esg.EsgComplianceApiApplication    : The following 1 profile is active: "production"
+app-1  | 2026-10-13T22:10:24.395Z  INFO 1 --- [esg-compliance-api] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+app-1  | 2026-10-13T22:10:24.487Z  INFO 1 --- [esg-compliance-api] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+app-1  | 2026-10-13T22:10:25.881Z  INFO 1 --- [esg-compliance-api] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+app-1  | 2026-10-13T22:10:25.900Z  INFO 1 --- [esg-compliance-api] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+app-1  | 2026-10-13T22:10:25.901Z  INFO 1 --- [esg-compliance-api] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+app-1  | 2026-10-13T22:10:25.948Z  INFO 1 --- [esg-compliance-api] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+app-1  | 2026-10-13T22:10:25.950Z  INFO 1 --- [esg-compliance-api] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5436 ms
+app-1  | 2026-10-13T22:10:26.882Z  INFO 1 --- [esg-compliance-api] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+app-1  | 2026-10-13T22:10:27.667Z  INFO 1 --- [esg-compliance-api] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@37caecda
+app-1  | 2026-10-13T22:10:27.669Z  INFO 1 --- [esg-compliance-api] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+app-1  | 2026-10-13T22:10:27.696Z  INFO 1 --- [esg-compliance-api] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:oracle:thin:@oracle-db:1521/FREEPDB1 (Oracle 23.26)
+app-1  | 2026-10-13T22:10:28.359Z  WARN 1 --- [esg-compliance-api] [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: Oracle 23.26 is newer than this version of Flyway and support has not been tested. The latest supported version of Oracle is 21.3.
+app-1  | 2026-10-13T22:10:28.594Z  INFO 1 --- [esg-compliance-api] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PROJETOF"."flyway_schema_history" does not exist yet
+app-1  | 2026-10-13T22:10:28.598Z  INFO 1 --- [esg-compliance-api] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.196s)
+app-1  | 2026-10-13T22:10:29.269Z  INFO 1 --- [esg-compliance-api] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PROJETOF"."flyway_schema_history" ...
+app-1  | 2026-10-13T22:10:29.507Z  INFO 1 --- [esg-compliance-api] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PROJETOF": << Empty Schema >>
+app-1  | 2026-10-13T22:10:29.536Z  INFO 1 --- [esg-compliance-api] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PROJETOF" to version "1 - init"
+app-1  | 2026-10-13T22:10:29.867Z  INFO 1 --- [esg-compliance-api] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PROJETOF" to version "2 - seed data"
+app-1  | 2026-10-13T22:10:29.911Z  INFO 1 --- [esg-compliance-api] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PROJETOF", now at version v2 (execution time 00:00.116s)
+app-1  | 2026-10-13T22:10:30.099Z  INFO 1 --- [esg-compliance-api] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+app-1  | 2026-10-13T22:10:30.189Z  INFO 1 --- [esg-compliance-api] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+app-1  | 2026-10-13T22:10:30.235Z  INFO 1 --- [esg-compliance-api] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+app-1  | 2026-10-13T22:10:30.748Z  INFO 1 --- [esg-compliance-api] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+app-1  | 2026-10-13T22:10:30.826Z  WARN 1 --- [esg-compliance-api] [           main] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+app-1  | 2026-10-13T22:10:32.160Z  INFO 1 --- [esg-compliance-api] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+app-1  | 2026-10-13T22:10:32.681Z  INFO 1 --- [esg-compliance-api] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+app-1  | 2026-10-13T22:10:34.263Z  INFO 1 --- [esg-compliance-api] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+app-1  | 2026-10-13T22:10:34.864Z  INFO 1 --- [esg-compliance-api] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+app-1  | 2026-10-13T22:10:35.749Z  INFO 1 --- [esg-compliance-api] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+app-1  | 2026-10-13T22:10:35.770Z  INFO 1 --- [esg-compliance-api] [           main] b.c.p.esg.EsgComplianceApiApplication    : Started EsgComplianceApiApplication in 16.905 seconds (process running for 18.428)
+app-1  | 2026-10-13T22:10:37.756Z  INFO 1 --- [esg-compliance-api] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+app-1  | 2026-10-13T22:10:37.757Z  INFO 1 --- [esg-compliance-api] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+app-1  | 2026-10-13T22:10:37.760Z  INFO 1 --- [esg-compliance-api] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

@@ -1,0 +1,10 @@
+# Trechos do log oficial GitHub Actions, run 38474933261, job 115563176509.
+2026-10-13T22:02:27.3975417Z [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.846 s -- in br.com.projetof.esg.service.AuditServiceTest
+2026-10-13T22:02:27.7481760Z [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.344 s -- in br.com.projetof.esg.service.DashboardServiceTest
+2026-10-13T22:02:27.8491543Z [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 s -- in br.com.projetof.esg.service.AlertServiceTest
+2026-10-13T22:02:27.9613882Z [INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 s -- in br.com.projetof.esg.service.LicenseServiceTest
+2026-10-13T22:02:33.0244498Z [INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.028 s -- in br.com.projetof.esg.controller.LicenseControllerSecurityTest
+2026-10-13T22:02:33.0557080Z [INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0
+2026-10-13T22:02:34.0003400Z [INFO] BUILD SUCCESS
+2026-10-13T22:02:34.0031249Z [INFO] Total time:  18.152 s
+2026-10-13T22:02:34.0048353Z [INFO] Finished at: 2026-10-13T22:02:33Z

@@ -2,6 +2,8 @@
 
 Este guia explica, do zero, como executar o projeto em outra máquina.
 
+> **Entrega de 13/10/2026:** o projeto usa o modo **runner**, sem VM Azure. Consulte o README e o PDF para os resultados e a execução comprovada. As Partes 6 e 7 descrevem a alternativa opcional por SSH. O repositório e o pacote GHCR são privados.
+
 - **Parte 1 a 4:** rodar a aplicação e os testes **na sua máquina** (é o que a maioria precisa).
 - **Parte 5 a 8:** colocar o pipeline CI/CD para rodar no GitHub e fazer o deploy em **staging** e **produção**.
 - **Parte 9:** solução de problemas comuns.
@@ -264,7 +266,7 @@ O pipeline fica em `.github/workflows/` e roda automaticamente no **GitHub Actio
 
 1. Acesse https://github.com e faça login.
 2. Clique em **+** (canto superior direito) → **New repository**.
-3. Nome: por exemplo `esg-compliance-api`. Pode ser **Public** ou **Private**.
+3. Nesta entrega, o repositório já foi criado como `PauloOliver12/Projeto-ESG-DevOps`, com visibilidade **Private**. Ao reproduzir em outro repositório, escolha o nome e mantenha a visibilidade privada.
 4. **Não** marque "Add a README" (o projeto já tem). Clique em **Create repository**.
 
 ### 5.2 Enviar o código
@@ -305,15 +307,15 @@ git push -u origin main
 
 Sem servidor configurado, os deploys de staging e produção são feitos no próprio runner do GitHub Actions: a stack sobe com a imagem publicada, o smoke test roda e as evidências ficam nos artefatos `evidencias-staging` e `evidencias-production` da execução. Ao configurar o servidor (Partes 6 e 7), o mesmo pipeline passa a publicar na VM automaticamente (modo **servidor**).
 
-> Antes do primeiro push, em **Settings → Actions → General → Workflow permissions**, marque **Read and write permissions** (necessário para publicar a imagem no GHCR).
+> O job de publicação já declara `packages: write`. Só revise permissões adicionais se uma política efetiva bloquear a publicação; não é necessário ampliar globalmente as permissões do workflow para esta entrega.
 
 Para rodar o pipeline manualmente: **Actions → CI/CD - ESG Compliance API → Run workflow → Run workflow**.
 
 ---
 
-## Parte 6 - Criar o servidor para staging e produção
+## Parte 6 - Alternativa opcional: servidor para staging e produção
 
-Os deploys são feitos em um servidor Linux com Docker, acessado via SSH. O exemplo abaixo usa o **Azure for Students** (gratuito para alunos), mas qualquer VM Ubuntu com IP público funciona (AWS, GCP, Oracle Cloud etc.).
+Nesta alternativa, os deploys são feitos em um servidor Linux com Docker, acessado via SSH. O exemplo abaixo usa Azure; é necessário conferir a elegibilidade e os custos da conta antes de provisionar recursos. Esta entrega utilizou apenas o runner do GitHub Actions.
 
 ### 6.1 Criar a máquina virtual (Azure)
 
@@ -484,7 +486,7 @@ Salve em `docs/prints/`:
 | Pipeline: `Permission denied (publickey)` | Chave ou usuário SSH incorretos | Confira `SSH_USER` e se `SSH_PRIVATE_KEY` contém o `.pem` completo |
 | Pipeline: `denied` ao baixar a imagem no servidor | Permissão do pacote no GHCR | GitHub → seu perfil → **Packages** → `esg-compliance-api` → **Package settings** → **Manage Actions access** → adicione o repositório |
 | Pipeline: smoke test estoura o tempo no deploy | VM sem memória suficiente | Use VM de 8 GB ou uma VM por ambiente; veja os logs na própria etapa que falhou |
-| Pipeline: erro ao publicar imagem (`permission_denied: write_package`) | Permissões do Actions restritas | **Settings → Actions → General → Workflow permissions → Read and write permissions** |
+| Pipeline: erro ao publicar imagem (`permission_denied: write_package`) | Permissão efetiva ou acesso ao pacote | Conferir `packages: write` no job, políticas aplicáveis e vínculo do pacote com o repositório |
 
 ---
 

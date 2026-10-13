@@ -1,0 +1,106 @@
+{
+  "captured_at": "2026-10-13T18:31:02-03:00",
+  "base_url": "http://localhost:8080",
+  "checks": [
+    {
+      "name": "health",
+      "path": "/actuator/health",
+      "user": "sem credenciais",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "captured_at": "2026-10-13T18:31:02-03:00",
+      "file": "health.json"
+    },
+    {
+      "name": "info",
+      "path": "/actuator/info",
+      "user": "sem credenciais",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "captured_at": "2026-10-13T18:31:02-03:00",
+      "file": "info.json"
+    },
+    {
+      "name": "licenses-anonymous",
+      "path": "/api/licenses",
+      "user": "sem credenciais",
+      "status": 401,
+      "expected": 401,
+      "passed": true,
+      "captured_at": "2026-10-13T18:31:02-03:00",
+      "file": "licenses-anonymous.json"
+    },
+    {
+      "name": "licenses-wrong-password",
+      "path": "/api/licenses",
+      "user": "analyst",
+      "status": 401,
+      "expected": 401,
+      "passed": true,
+      "captured_at": "2026-10-13T18:31:02-03:00",
+      "file": "licenses-wrong-password.json"
+    },
+    {
+      "name": "dashboard-analyst",
+      "path": "/api/dashboard/summary",
+      "user": "analyst",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "captured_at": "2026-10-13T18:31:02-03:00",
+      "file": "dashboard-analyst.json"
+    },
+    {
+      "name": "licenses-admin",
+      "path": "/api/licenses",
+      "user": "admin",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "captured_at": "2026-10-13T18:31:02-03:00",
+      "file": "licenses-admin.json"
+    },
+    {
+      "name": "audits-auditor",
+      "path": "/api/audits",
+      "user": "auditor",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "captured_at": "2026-10-13T18:31:02-03:00",
+      "file": "audits-auditor.json"
+    },
+    {
+      "name": "alerts-analyst",
+      "path": "/api/alerts/open",
+      "user": "analyst",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "captured_at": "2026-10-13T18:31:02-03:00",
+      "file": "alerts-analyst.json"
+    },
+    {
+      "name": "openapi",
+      "path": "/v3/api-docs",
+      "user": "sem credenciais",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "captured_at": "2026-10-13T18:31:02-03:00",
+      "file": "openapi.json"
+    },
+    {
+      "name": "swagger",
+      "path": "/swagger-ui.html",
+      "user": "sem credenciais",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "captured_at": "2026-10-13T18:31:02-03:00",
+      "file": "swagger.html"
+    }
+  ]
+}
