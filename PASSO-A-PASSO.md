@@ -2,7 +2,7 @@
 
 Este guia explica, do zero, como executar o projeto em outra máquina.
 
-> **Entrega de 13/10/2026:** o projeto usa o modo **runner**, sem VM Azure. Consulte o README e o PDF para os resultados e a execução comprovada. As Partes 6 e 7 descrevem a alternativa opcional por SSH. O repositório e o pacote GHCR são privados.
+> **Entrega de 13/10/2026:** o projeto usa o modo **runner**, sem VM Azure. Consulte o README e o PDF para os resultados e a execução comprovada. As Partes 6 e 7 descrevem a alternativa opcional por SSH. O repositório é público para consulta do avaliador; o pacote GHCR tem visibilidade independente e foi publicado como privado.
 
 - **Parte 1 a 4:** rodar a aplicação e os testes **na sua máquina** (é o que a maioria precisa).
 - **Parte 5 a 8:** colocar o pipeline CI/CD para rodar no GitHub e fazer o deploy em **staging** e **produção**.
@@ -266,7 +266,7 @@ O pipeline fica em `.github/workflows/` e roda automaticamente no **GitHub Actio
 
 1. Acesse https://github.com e faça login.
 2. Clique em **+** (canto superior direito) → **New repository**.
-3. Nesta entrega, o repositório já foi criado como `PauloOliver12/Projeto-ESG-DevOps`, com visibilidade **Private**. Ao reproduzir em outro repositório, escolha o nome e mantenha a visibilidade privada.
+3. Nesta entrega, o repositório já foi criado como `PauloOliver12/Projeto-ESG-DevOps` e está com visibilidade **Public** para consulta do avaliador. Ao reproduzir em outro repositório, escolha o nome e a visibilidade adequados à sua entrega.
 4. **Não** marque "Add a README" (o projeto já tem). Clique em **Create repository**.
 
 ### 5.2 Enviar o código

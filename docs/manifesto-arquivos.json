@@ -46,13 +46,18 @@
   },
   {
     "path": "docs/conteudo-relatorio.md",
-    "sha256": "09dfc86e5d2f69bfa5055bbf186652c9546558dc5b050cf67fb3b75750d9094c",
-    "bytes": 20922
+    "sha256": "ed2b4d70f76892dc5a7ca60f1222f3badf845562c05d8cd668b5c00dd0fc533a",
+    "bytes": 21036
   },
   {
     "path": "docs/Documentacao-Tecnica-ESG-DevOps.pdf",
-    "sha256": "58f395bcbffce4d00999c1850bea4e4eb0174768e31e05f8806f767c6f43a0bf",
-    "bytes": 903406
+    "sha256": "c4adc536624a9b36fe34c868f5e8016dac818ca849f34107f78030db84832d87",
+    "bytes": 903454
+  },
+  {
+    "path": "docs/evidencias/github/acesso-publico.json",
+    "sha256": "5e05dac2c794501c5f98366f949cf5e9314512a0c4534643f52bd4ead462f0e9",
+    "bytes": 818
   },
   {
     "path": "docs/evidencias/github/build-test.log",
@@ -261,8 +266,8 @@
   },
   {
     "path": "PASSO-A-PASSO.md",
-    "sha256": "69ebc48c3493616cbd2480ff12474dcd4e68c7355ba6a1ca597fed9eeb597772",
-    "bytes": 19412
+    "sha256": "9e09e3083989cdd4379a78cd8d16e33d8171a71d1fc7ff2724d2afa9e5073329",
+    "bytes": 19536
   },
   {
     "path": "pom.xml",
@@ -271,8 +276,8 @@
   },
   {
     "path": "README.md",
-    "sha256": "c8d475c4481ca42f288985de74327aabb2cec69b8a50184246215f708d1d1f87",
-    "bytes": 20355
+    "sha256": "4958efefc98670c818a75b1609d0f8818085aecb79edd768b755e4213dca8365",
+    "bytes": 20810
   },
   {
     "path": "scripts/setup-server.sh",

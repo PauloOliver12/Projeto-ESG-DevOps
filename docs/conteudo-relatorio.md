@@ -242,7 +242,7 @@ A consulta com ADMIN retornou a licença LIC-2026-001, da empresa demonstrativa 
 
 07 / EVIDÊNCIAS
 
-Execução #2 de 13/10/2026; repositório privado PauloOliver12/Projeto-ESG-DevOps.
+Execução #2 de 13/10/2026; repositório público PauloOliver12/Projeto-ESG-DevOps.
 
 
 # Pipeline executado no GitHub
@@ -312,7 +312,7 @@ Health, info, containers e logs | docs/evidencias/github/staging/ e production/
 IDs e hashes dos artefatos | docs/evidencias/github/resultado-ci.json
 Integridade dos arquivos do pacote | docs/manifesto-arquivos.json
 
-Os links do repositório e do Actions exigem acesso autorizado, pois o projeto foi mantido privado. O PDF, os prints e os registros necessários à avaliação também estão incluídos no ZIP.
+O repositório e a página da execução do Actions são públicos, com acesso sem login verificado após a mudança de visibilidade. O pacote GHCR tem acesso separado. O ZIP inclui as evidências e o registro acesso-publico.json; os metadados originais preservam a visibilidade privada da coleta inicial.
 
 08 / DESAFIOS
 
@@ -391,7 +391,7 @@ Conferido com os prints do enunciado da Fase 6 - Desafio DevOps fornecidos em 13
 
 Referências
 
-Fontes do projeto: repositório privado; GitHub Actions #2; XML Surefire, artefatos dos deploys e respostas HTTP de 13/10/2026. O trabalho anterior foi utilizado somente como referência de organização.
+Fontes do projeto: repositório público; GitHub Actions #2; XML Surefire, artefatos dos deploys e respostas HTTP de 13/10/2026. O trabalho anterior foi utilizado somente como referência de organização.
 
 [R1] Docker. Control startup and shutdown order in Compose. Consultar documentação. Acesso: 13 out. 2026.
 

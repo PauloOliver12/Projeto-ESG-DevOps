@@ -309,7 +309,7 @@ Alem disso, o job `integration-test` e o smoke test pos-deploy validam a aplicac
 
 Documentacao tecnica: [PDF](docs/Documentacao-Tecnica-ESG-DevOps.pdf).
 
-Repositorio **privado**: [PauloOliver12/Projeto-ESG-DevOps](https://github.com/PauloOliver12/Projeto-ESG-DevOps).
+Repositorio **publico**: [PauloOliver12/Projeto-ESG-DevOps](https://github.com/PauloOliver12/Projeto-ESG-DevOps). O codigo e a pagina da execucao do pipeline podem ser consultados sem convite de acesso.
 
 ### Pipeline completo aprovado
 
@@ -332,6 +332,8 @@ O pacote do GHCR e privado. Os deploys utilizaram a mesma referencia de imagem e
 A primeira execucao revelou uma divergencia de credenciais no runner. A causa e a correcao do workflow estao registradas em [correcao-deploy.md](docs/evidencias/github/correcao-deploy.md); os resultados desta entrega pertencem a execucao #2, apos a correcao.
 
 Metadados, identificadores e hashes dos artefatos: [resultado-ci.json](docs/evidencias/github/resultado-ci.json). Evidencias originais: [staging](docs/evidencias/github/staging/) e [production](docs/evidencias/github/production/). Log resumido da integracao: [integration.log](docs/evidencias/github/integration.log).
+
+O repositorio foi tornado publico apos a coleta inicial. Os registros originais preservam a visibilidade privada da epoca; a verificacao posterior, sem autenticacao, esta em [acesso-publico.json](docs/evidencias/github/acesso-publico.json). A visibilidade do pacote GHCR e independente da visibilidade do repositorio.
 
 ### Validacao local de 13/10/2026
 
@@ -376,7 +378,7 @@ Os dados iniciais de demonstracao sao inseridos em `src/main/resources/db/migrat
 
 Conferido em 13/10/2026 com os requisitos e os artefatos de entrega apresentados no enunciado da Fase 6 - Desafio DevOps. O PDF contempla os seis topicos solicitados, incluindo integrantes, pipeline, Docker, prints de execucao, os dois ambientes e desafios resolvidos.
 
-Staging e production foram implantados e verificados em runners temporarios. Os prints fornecidos do enunciado nao exigem Azure nem uma URL publica permanente. Como o repositorio e privado, o avaliador precisa receber o ZIP ou obter acesso autorizado ao GitHub.
+Staging e production foram implantados e verificados em runners temporarios. Os prints fornecidos do enunciado nao exigem Azure nem uma URL publica permanente da aplicacao. O repositorio e a pagina do pipeline sao publicos; o ZIP e o PDF tambem incluem as evidencias para avaliacao sem depender desses links.
 
 | Item solicitado no enunciado | OK | Onde verificar |
 |---|:---:|---|
